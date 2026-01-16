@@ -1,0 +1,38 @@
+/*
+ * Copyright (c) 2026 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+#include <physical_layouts.dtsi>
+
+/ {
+    horizontal_physical_layout: horizontal_physical_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Horizontal Layout";
+            //                     w   h        x   y  rot rx ry
+        keys
+            = <&key_physical_attrs 100 100      0   0    0 0 0>
+            , <&key_physical_attrs 100 100    100   0    0 0 0>
+            , <&key_physical_attrs 100 100    200   0    0 0 0>
+            , <&key_physical_attrs 100 100      0 100    0 0 0>
+            , <&key_physical_attrs 100 100    100 100    0 0 0>
+            , <&key_physical_attrs 100 100    200 100    0 0 0>
+            , <&key_physical_attrs 100 100      0 200    0 0 0>
+            , <&key_physical_attrs 100 100    100 200    0 0 0>
+            , <&key_physical_attrs 100 100    200 200    0 0 0>
+            ;
+    };
+
+position_map {
+        compatible = "zmk,physical-layout-position-map";
+
+        horizontal_map: horizontal {
+            physical-layout = <&horizontal_physical_layout>;
+            positions
+                = < 0  1  2 >
+                , < 3  4  5 >
+                , < 6  7  8 >
+            ;
+        };
+};
+};

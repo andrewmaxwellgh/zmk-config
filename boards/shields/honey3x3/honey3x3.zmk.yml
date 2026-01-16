@@ -1,0 +1,10 @@
+file_format: "1"
+id: honey3x3
+name: Honey3x3
+type: shield
+url: https://github.com/andrewmaxwellgh/honey3x3-shield-module/tree/main/boards/shields/honey3x3
+requires:
+  - pro_micro
+features:
+  - keys
+  - studio
