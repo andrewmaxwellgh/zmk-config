@@ -8,12 +8,13 @@
 #include "honey3x3-layouts.dtsi"
 
 
-/ {
-
 &horizontal_physical_layout {
     transform = <&horizontal_transform>;
-};
-    chosen {
+	};
+
+/ {
+
+	chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &horizontal_physical_layout;
     };
