@@ -27,9 +27,9 @@
             display-name = "Lower Layer";
 			
             bindings = <
-               &none    &none    &none
-               &none    &TAB     &LALT
-               &PG_DN   &LCTRL   &PG_UP
+               &none    	&none    	&none
+               &none    	&kp TAB     &kp LALT
+               &kp PG_DN   	&kp LCTRL   &kp PG_UP
             >;
         };
 
