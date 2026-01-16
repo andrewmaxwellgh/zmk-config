@@ -5,9 +5,9 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "honey3x3-layouts.dtsi"
+#include <honey3x3-layouts.dtsi>
 
-/{
+/ {
 
 &horizontal_physical_layout {
     transform = <&horizontal_transform>;
