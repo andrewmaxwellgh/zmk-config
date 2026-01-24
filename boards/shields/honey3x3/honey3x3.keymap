@@ -43,9 +43,9 @@
             display-name = "Lower Layer";
 			
             bindings = <
-               &none    	bindings = <&qbt>   &kp F4
-               &none    	&kp TAB     		&kp LALT
-               &kp PG_DN   	&kp LCTRL   		&kp PG_UP
+               &none    	&qbt			&kp F4
+               &none    	&kp TAB     	&kp LALT
+               &kp PG_DN   	&kp LCTRL   	&kp PG_UP
             >;
         };
 
