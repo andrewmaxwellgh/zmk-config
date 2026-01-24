@@ -8,7 +8,7 @@
 #include "honey3x3-layouts.dtsi"
 
 
-&horizontal_physical_layout {
+    &horizontal_physical_layout {
     transform = <&horizontal_transform>;
 	};
 
