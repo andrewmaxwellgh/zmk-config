@@ -9,6 +9,22 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+
+	macros {
+        qbt: qbt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp SPACE>
+                , <&macro_release &kp LCTRL>
+				, <&macro_wait_time 500>
+				, <&macro_tap &kp Q &kp B &kp RET>
+                ;
+        };
+    };
+
+
     keymap {
         compatible = "zmk,keymap";
 		
@@ -27,9 +43,9 @@
             display-name = "Lower Layer";
 			
             bindings = <
-               &none    	&none    	&none
-               &none    	&kp TAB     &kp LALT
-               &kp PG_DN   	&kp LCTRL   &kp PG_UP
+               &none    	bindings = <&qbt>   &kp F4
+               &none    	&kp TAB     		&kp LALT
+               &kp PG_DN   	&kp LCTRL   		&kp PG_UP
             >;
         };
 
