@@ -63,9 +63,9 @@
             display-name = "Extra Layer";
             
             bindings = <
-              &none     &C_PP       &none
-              &none     &C_VOL_UP   &none
-              &none     &C_VOL_DN   &none
+              &none     &kp C_PP       &none
+              &none     &kp C_VOL_UP   &none
+              &none     &kp C_VOL_DN   &none
             >;
         };
 
