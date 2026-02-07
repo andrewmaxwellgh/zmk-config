@@ -18,8 +18,8 @@
                 = <&macro_press &kp LCTRL>
                 , <&macro_tap &kp SPACE>
                 , <&macro_release &kp LCTRL>
-                , <&macro_wait_time 100>
-				, <&macro_tap_time 100>
+                , <&macro_wait_time 500>
+				, <&macro_tap_time 200>
 				, <&macro_tap &kp Q &kp B &kp RET>
                 ;
         };
@@ -52,21 +52,23 @@
 
         raise_layer {
             display-name = "Raise Layer";
-			
+
             bindings = <
-              &bt BT_SEL 0   &bt BT_SEL 1 &bt BT_SEL 2
-              &bt BT_CLR     &none        &none
-              &studio_unlock &sys_reset   &bootloader
+              &kp T         &kp C_PP       &kp C
+              &kp F         &kp C_VOL_UP   &none
+              &kp LT        &kp C_VOL_DN   &kp GT
             >;
+			
+            
         };
 
         extra_layer {
             display-name = "Extra Layer";
             
             bindings = <
-              &none     &kp C_PP       &none
-              &none     &kp C_VOL_UP   &none
-              &none     &kp C_VOL_DN   &none
+              &none             &bt BT_SEL 1      &bt BT_SEL 2
+              &none             &bt BT_CLR        &bt BT_SEL 0
+              &studio_unlock    &sys_reset        &bootloader
             >;
         };
 
