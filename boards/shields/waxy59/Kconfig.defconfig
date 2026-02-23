@@ -1,0 +1,6 @@
+if SHIELD_WAXY59
+
+config ZMK_KEYBOARD_NAME
+    default "Waxy59"
+
+endif # SHIELD_WAXY59

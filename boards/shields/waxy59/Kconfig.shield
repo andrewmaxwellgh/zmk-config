@@ -1,0 +1,2 @@
+config SHIELD_WAXY59
+    def_bool $(shields_list_contains,waxy59)
