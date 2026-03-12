@@ -57,7 +57,7 @@
                 ;
         };
 
-        csxcsaltf3: csxcsaltf4 {
+        csxcsaltf4: csxcsaltf4 {
            compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
