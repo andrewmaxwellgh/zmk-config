@@ -1,6 +1,6 @@
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 10    // default: 10
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // default: 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // default: 600
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -182,7 +182,7 @@
                 &none       &none        &none        &none        &none        &none           &none       &mkp MB1          &mmv MOVE_UP       &mkp MB2        &none       &none 
                 &none       &none        &none        &none        &none        &none           &none       &mmv MOVE_LEFT    &mmv MOVE_DOWN     &mmv MOVE_RIGHT &none       &none 
                 &none       &none        &none        &none        &msc SCRL_UP &msc SCRL_DOWN  &none       &none             &none              &none           &none       &none 
-                &none       &none        &none        &none        &none        &none           &none       &none             &none              &none           &none       &none 
+                &none       &none        &none        &none        &none        &none           &none       &none             &kp UP             &kp DOWN        &kp LEFT    &kp RIGHT 
             >;
         };  
 
