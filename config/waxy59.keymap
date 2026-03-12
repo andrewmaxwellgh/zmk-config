@@ -81,21 +81,21 @@
         tdDEL: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <170>;
             bindings = <&kp DEL>, <&kp LC(DEL)>;
         };
 
         tdBSPC: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <170>;
             bindings = <&kp BSPC>, <&kp LC(BSPC)>;
         };
 
         tdPNT: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             bindings = <&csxcs>, <&csxcsaltf4>;
         };
     };
