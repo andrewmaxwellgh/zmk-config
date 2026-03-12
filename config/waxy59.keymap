@@ -57,21 +57,46 @@
                 ;
         };
 
+        csxcsaltf3: csxcsaltf4 {
+           compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp X>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LSHFT>
+                , <&macro_press &kp LCTRL>
+                , <&macro_tap &kp S>
+                , <&macro_release &kp LCTRL>
+                , <&macro_press &kp LALT>
+                , <&macro_tap &kp F4>
+                , <&macro_release &kp LALT>
+                ;
+        };
+
     };
 
     behaviors {
         tdDEL: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp DEL>, <&kp LC(DEL)>;
         };
 
         tdBSPC: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp BSPC>, <&kp LC(BSPC)>;
+        };
+
+        tdPNT: tap_dance_2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <150>;
+            bindings = <&csxcs>, <&csxcsaltf4>;
         };
     };
 
@@ -96,7 +121,7 @@
                 &kp F1      &kp F2        &kp F3       &kp F4     &kp F5         &kp F6     &kp F7  &kp F8    &kp F9       &kp F10       &kp F11                 &kp F12
                 &kp TILDE   &kp LA(F4)   &none         &none       &none         &none      &none    &none    &none        &none           &none                &kp DEL 
                 &none       &none        &kp LG(LS(S)) &tdDEL      &tdBSPC       &none      &none    &kp PLUS &kp MINUS    &kp EQUAL       &none                 &none 
-                &none       &csxcs        &kp LC(LS(X)) &none        &none        &none      &none    &none    &kp LBKT     &kp RBKT        &none                  &none 
+                &none       &tdPNT        &kp LC(LS(X)) &none        &none        &none      &none    &none    &kp LBKT     &kp RBKT        &none                  &none 
                 &none       &none        &none         &none        &none        &none      &none    &none    &kp PG_UP    &kp PG_DN       &kp HOME              &kp END 
             >;
         };
