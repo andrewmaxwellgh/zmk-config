@@ -55,7 +55,7 @@
                 , <&macro_tap &kp S>
                 , <&macro_release &kp LCTRL>
                 ;
-        }
+        };
 
     };
 
