@@ -106,83 +106,83 @@
 
         default_layer {
             bindings = <
-                &kp ESC    &kp N1  &kp N2    &kp N3    &kp N4   &kp N5  &kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &mo 3
-		        &kp TAB    &kp Q   &kp W     &kp E     &kp R    &kp T   &kp Y   &kp U      &kp I      &kp O     &kp P     &kp BSPC
-                &kp LCTRL  &kp A   &kp S     &kp D     &kp F    &kp G   &kp H   &kp J      &kp K      &kp L     &kp SEMI  &kp APOS
-                &kp LSHFT  &kp Z   &kp X     &kp C     &kp V    &kp B   &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-                &mo 1      &none   &kp LGUI  &kp LALT  &kp RET  &mo 2   &none   &kp SPACE  &kp UP     &kp DOWN  &kp LEFT  &kp RIGHT
+                &kp ESC	  &kp N1	&kp N2	 &kp N3	    &kp N4	&kp N5     &kp N6       &kp N7         &kp N8	   &kp N9     &kp N0      &mo 3
+		        &kp TAB   &kp Q     &kp W    &kp E      &kp R   &kp T      &kp Y        &kp U          &kp I       &kp O      &kp P       &kp BSPC
+                &kp LCTRL &kp A     &kp S    &kp D      &kp F   &kp G      &kp H        &kp J          &kp K       &kp L      &kp SEMI    &kp APOS
+                &kp LSHFT &kp Z     &kp X    &kp C      &kp V   &kp B      &kp N        &kp M          &kp COMMA   &kp DOT    &kp FSLH    &kp RSHFT
+                &mo 1     &none     &kp LGUI &kp LALT   &kp RET &mo 2      &none        &kp SPACE      &kp UP      &kp DOWN   &kp LEFT    &kp RIGHT
             				
             >;
         };
 
         lower_layer {
             display-name = "Lower Layer";
-            //    ESC         1             2          3        4       5       6        7          8          9         0         -
+            //  ESC              1          2           3             4          5          6         7       8               9               0                     -
             bindings = <
-                &kp F1     &kp F2      &kp F3         &kp F4  &kp F5   &kp F6  &kp F7  &kp F8    &kp F9     &kp F10    &kp F11   &kp F12
-                &kp TILDE  &kp LA(F4)  &none          &none   &none    &none   &none   &none     &none      &none      &none     &kp DEL
-                &none      &none       &kp LG(LS(S))  &tdDEL  &tdBSPC  &none   &none   &kp PLUS  &kp MINUS  &kp EQUAL  &none     &none
-                &none      &tdPNT      &kp LC(LS(X))  &none   &none    &none   &none   &none     &kp LBKT   &kp RBKT   &none     &none
-                &none      &none       &none          &none   &none    &none   &none   &none     &kp PG_UP  &kp PG_DN  &kp HOME  &kp END
+                &kp F1      &kp F2       &kp F3        &kp F4      &kp F5        &kp F6     &kp F7  &kp F8    &kp F9       &kp F10       &kp F11                 &kp F12
+                &kp TILDE   &kp LA(F4)   &none         &none       &none         &none      &none    &none    &none        &none           &none                &kp DEL 
+                &none       &none        &kp LG(LS(S)) &tdDEL      &tdBSPC       &none      &none    &kp PLUS &kp MINUS    &kp EQUAL       &none                 &none 
+                &none       &tdPNT       &kp LC(LS(X)) &none        &none        &none      &none    &none    &kp LBKT     &kp RBKT        &none                  &none 
+                &none       &none        &none         &none        &none        &none      &none    &none    &kp PG_UP    &kp PG_DN       &kp HOME              &kp END 
             >;
         };
 
         raise_layer {
             display-name = "Raise Layer";
-            //  ESC     1      2      3         4              5           6      7         8             9           0        -
+            //  ESC             1             2          3            4         5               6               7       8          9               0               -
             bindings = <
-                &none  &none  &none  &none  &none         &none           &none  &none  &none         &none         &none     &none
-                &none  &none  &none  &none  &none         &none           &none  &none  &none         &none         &kp C_PP  &none
-                &none  &none  &none  &none  &none         &none           &none  &none  &none         &none         &none     &none
-                &none  &none  &none  &none  &msc SCRL_UP  &msc SCRL_DOWN  &none  &none  &none         &none         &none     &none
-                &none  &none  &none  &none  &none         &none           &none  &none  &kp C_VOL_UP  &kp C_VOL_DN  &none     &none
+                &none       &none        &none        &none         &none        &none          &none      &none    &none        &none           &none       &none 
+                &none       &none        &none        &none        &none        &none           &none       &none    &none        &none           &kp C_PP    &none 
+                &none       &none        &none        &none        &none        &none            &none       &none    &none        &none           &none       &none 
+                &none       &none        &none        &none        &msc SCRL_UP &msc SCRL_DOWN  &none       &none    &none        &none           &none       &none 
+                &none       &none        &none        &none        &none        &none            &none       &none    &kp C_VOL_UP &kp C_VOL_DN    &none       &none 
             >;
         };
 
         next_layer {
             display-name = "Next Layer";
-            //    ESC          1           2           3           4            5         6          7           8      9        0        -
+            //  ESC             1             2          3            4         5           6     7                  8          9               0               -
             bindings = <
-                &bt BT_CLR  &bt BT_SEL  &bt BT_SEL  &bt BT_SEL  &none       &none        &none  &none           &none  &none  &tog 6     &none
-                &none       &none       &none       &none       &sys_reset  &none        &none  &studio_unlock  &none  &none  &kp PSCRN  &none
-                &none       &none       &none       &none       &none       &tog 4       &none  &none           &none  &none  &none      &none
-                &none       &none       &none       &none       &none       &bootloader  &none  &tog 5          &none  &none  &none      &none
-                &none       &none       &none       &none       &none       &none        &none  &none           &none  &none  &none      &none
+                &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none        &none       &none &none             &none        &none           &tog 6      &none 
+                &none       &none        &none        &none        &sys_reset   &none       &none &studio_unlock    &none        &none           &kp PSCRN   &none 
+                &none       &none        &none        &none        &none        &tog 4      &none &none             &none        &none           &none       &none 
+                &none       &none        &none        &none        &none        &bootloader &none &tog 5             &none        &none           &none       &none 
+                &none       &none        &none        &none        &none        &none       &none &none             &none        &none           &none       &none 
             >;
         };
         gaming_layer {
             display-name = "Gaming Layer";
-            //    ESC       1        2         3          4        5       6        7         8         9         0          -
+            //  ESC              1          2           3             4          5      6         7       8               9               0              -
             bindings = <
-                &kp ESC    &kp N1  &kp N2    &kp N3    &kp N4     &kp N5  &kp N6  &kp N7   &kp N8     &kp N9    &kp N0    &tog 4
-		        &kp TAB    &kp Q   &kp W     &kp E     &kp R      &kp T   &kp Y   &kp U    &kp I      &kp O     &kp P     &kp BSPC
-                &kp LCTRL  &kp A   &kp S     &kp D     &kp F      &kp G   &kp H   &kp J    &kp K      &kp L     &kp SEMI  &kp APOS
-                &kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B   &kp N   &kp M    &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-                &mo 1      &none   &kp LGUI  &kp LALT  &kp SPACE  &mo 2   &none   &kp RET  &kp UP     &kp DOWN  &kp LEFT  &kp RIGHT
+                &kp ESC	  &kp N1	&kp N2	        &kp N3	        &kp N4	 &kp N5     &kp N6      &kp N7         &kp N8	   &kp N9     &kp N0      &tog 4
+		        &kp TAB   &kp Q     &kp W           &kp E           &kp R   &kp T      &kp Y        &kp U          &kp I       &kp O      &kp P       &kp BSPC
+                &kp LCTRL  &kp A     &kp S           &kp D          &kp F   &kp G      &kp H        &kp J          &kp K       &kp L      &kp SEMI    &kp APOS
+                &kp LSHFT &kp Z     &kp X           &kp C           &kp V   &kp B      &kp N        &kp M          &kp COMMA   &kp DOT    &kp FSLH    &kp RSHFT
+                &mo 1     &none  &kp LGUI           &kp LALT        &kp SPACE &mo 2     &none      &kp RET         &kp UP      &kp DOWN   &kp LEFT    &kp RIGHT 
             >;
         };
 
         MACOS_layer {
             display-name = "MACOS layer";
-            //    ESC         1         2         3         4       5       6         7          8         9         0          -
+            //  ESC              1        2           3             4        5        6               7           8               9               0              -
             bindings = <
-                &kp ESC    &kp N1     &kp N2    &kp N3    &kp N4   &kp N5  &kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &tog 5
-		        &kp TAB    &kp Q      &kp W     &kp E     &kp R    &kp T   &kp Y   &kp U      &kp I      &kp O     &kp P     &kp BSPC
-                &kp LCTRL  &kp A      &kp S     &kp D     &kp F    &kp G   &kp H   &kp J      &kp K      &kp L     &kp SEMI  &kp APOS
-                &kp LSHFT  &kp Z      &kp X     &kp C     &kp V    &kp B   &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-                &mo 1      &kp LCTRL  &kp LALT  &kp LCMD  &kp RET  &mo 2   &none   &kp SPACE  &kp UP     &kp DOWN  &kp LEFT  &kp RIGHT
+                &kp ESC	  &kp N1	&kp N2	      &kp N3	      &kp N4  &kp N5     &kp N6       &kp N7         &kp N8	     &kp N9     &kp N0            &tog 5
+		        &kp TAB   &kp Q     &kp W         &kp E           &kp R   &kp T      &kp Y        &kp U          &kp I       &kp O      &kp P             &kp BSPC
+                &kp LCTRL  &kp A    &kp S         &kp D           &kp F   &kp G      &kp H        &kp J          &kp K       &kp L      &kp SEMI          &kp APOS
+                &kp LSHFT &kp Z     &kp X         &kp C           &kp V   &kp B      &kp N        &kp M          &kp COMMA   &kp DOT    &kp FSLH          &kp RSHFT
+                &mo 1     &kp LCTRL &kp LALT      &kp LCMD        &kp RET &mo 2      &none        &kp SPACE      &kp UP      &kp DOWN   &kp LEFT          &kp RIGHT 
             >;
         };
 
       mouse_layer {
             display-name = "Mouse Layer";
-            //   ESC      1      2      3         4              5           6          7               8                9            0          -
+            //  ESC             1             2          3            4         5               6               7               8                 9               0               -
             bindings = <
-                &kp ESC  &none  &none  &none  &none         &none           &none  &none           &none           &none            &none     &tog 6
-                &none    &none  &none  &none  &none         &none           &none  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &none     &none
-                &none    &none  &none  &none  &none         &none           &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none     &none
-                &none    &none  &none  &none  &msc SCRL_UP  &msc SCRL_DOWN  &none  &none           &none           &none            &none     &none
-                &none    &none  &none  &none  &kp RET       &none           &none  &kp SPACE       &kp UP          &kp DOWN         &kp LEFT  &kp RIGHT
+                &kp ESC     &none        &none        &none        &none        &none           &none       &none             &none              &none           &none       &tog 6 
+                &none       &none        &none        &none        &none        &none           &none       &mkp MB1          &mmv MOVE_UP       &mkp MB2        &none       &none 
+                &none       &none        &none        &none        &none        &none           &none       &mmv MOVE_LEFT    &mmv MOVE_DOWN     &mmv MOVE_RIGHT &none       &none 
+                &none       &none        &none        &none        &msc SCRL_UP &msc SCRL_DOWN  &none       &none             &none              &none           &none       &none 
+                &none       &none        &none        &none        &kp RET      &none           &none       &kp SPACE         &kp UP             &kp DOWN        &kp LEFT    &kp RIGHT 
             >;
         };  
 
