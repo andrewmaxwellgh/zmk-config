@@ -70,6 +70,7 @@
                 , <&macro_press &kp LCTRL>
                 , <&macro_tap &kp S>
                 , <&macro_release &kp LCTRL>
+                , <&macro_wait_time 100>
                 , <&macro_press &kp LALT>
                 , <&macro_tap &kp F4>
                 , <&macro_release &kp LALT>
