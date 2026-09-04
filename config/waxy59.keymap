@@ -166,13 +166,13 @@
 
         Symbols_layer {
             display-name = "Layer 5 Symbols and macros";
-            //    ESC         1             2              3           4       5       6         7          8          9         0         -
+            //    ESC         1             2              3           4       5       6         7             8             9         0         -
             bindings = <
-                &kp F1     &kp F2      &kp F3         &kp F4         &kp F5   &kp F6  &kp F7  &kp F8     &kp F9     &kp F10    &kp F11   &kp F12
-                &kp GRAVE  &kp LA(F4)  &none          &kp LC(LS(X))  &tdPNT   &none   &none   &none      &none      &none      &none     &kp DEL
-                &none      &none       &kp LG(LS(S))  &tdDEL         &tdBSPC  &none   &none   &kp PLUS   &kp MINUS  &kp EQUAL  &none     &none
-                &none      &none       &none          &none          &none    &none   &none   &none      &kp LBKT   &kp RBKT   &none     &kp CAPS
-                &none      &none       &none          &none          &none    &none   &none   &kp SPACE  &kp PG_UP  &kp PG_DN  &kp HOME  &kp END
+                &kp F1     &kp F2      &kp F3         &kp F4         &kp F5   &kp F6  &kp F7  &kp F8     &kp F9           &kp F10    &kp F11   &kp F12
+                &kp GRAVE  &kp LA(F4)  &none          &kp LC(LS(X))  &tdPNT   &none   &none   &none      &none            &none      &none     &kp DEL
+                &none      &none       &kp LG(LS(S))  &tdDEL         &tdBSPC  &none   &none   &kp PLUS   &mt MINUS UNDER  &kp EQUAL  &none     &none
+                &none      &none       &none          &none          &none    &none   &none   &none      &kp LBKT         &kp RBKT   &none     &kp CAPS
+                &none      &none       &none          &none          &none    &none   &none   &kp SPACE  &kp PG_UP        &kp PG_DN  &kp HOME  &kp END
             >;
         };
 

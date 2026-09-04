@@ -40,7 +40,7 @@
                 = <&macro_tap &kp LGUI &kp Z &kp O &kp O &kp M &kp RET>
                 ;
         };
-        oxf: oxford learners bookshelf {
+        oxf: oxford_learners_bookshelf {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -75,7 +75,7 @@
             display-name = "Lower Layer (1)";
 			
             bindings = <
-               &to 3      &qbt       &kp F4
+               &tog 3     &qbt       &kp F4
                &none      &kp TAB    &kp LALT
                &kp PG_DN  &kp LCTRL  &kp PG_UP
             >;
@@ -96,8 +96,8 @@
 			
             bindings = <
               &tlgrm  &zoom   &oxf
-              &none   &none  &pnt
-              &obs   &stm  &qbt
+              &none   &tog 3  &pnt
+              &obs    &stm    &qbt
             >;
         };
     };
