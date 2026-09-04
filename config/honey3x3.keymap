@@ -5,15 +5,11 @@
 / {
 
 	macros {
-        qbt: qbt {
+        qbt: qbittorrent {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp SPACE>
-                , <&macro_release &kp LCTRL>
-				, <&macro_wait_time 500>
-				, <&macro_tap &kp Q &kp B &kp RET>
+                = <&macro_tap &kp LGUI &kp Q &kp B &kp I &kp T &kp RET>
                 ;
         };
         tlgrm: telegram {
@@ -35,6 +31,27 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp LGUI &kp S &kp T &kp E &kp A &kp RET>
+                ;
+        };
+        zoom: zoom {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LGUI &kp Z &kp O &kp O &kp M &kp RET>
+                ;
+        };
+        oxf: oxford learners bookshelf {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LGUI &kp O &kp X &kp F &kp O &kp RET>
+                ;
+        };
+        pnt: paint {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LGUI &kp P &kp A &kp I &kp N &kp RET>
                 ;
         };
     };
@@ -78,9 +95,9 @@
             display-name = "Macro Layer (3)";
 			
             bindings = <
-              &tlgrm  &obs   &stm
-              &none   &none  &none
-              &none   &none  &none
+              &tlgrm  &zoom   &oxf
+              &none   &none  &pnt
+              &obs   &stm  &qbt
             >;
         };
     };
