@@ -54,6 +54,37 @@
                 = <&macro_tap &kp LGUI &kp P &kp A &kp I &kp N &kp RET>
                 ;
         };
+        dscrd: discord {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LGUI &kp D &kp S &kp C &kp O &kp RET>
+                ;
+        };
+        anki: anki {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LGUI &kp A &kp N &kp K &kp I &kp RET>
+                ;
+        };
+        csc: csxcsaltf4 {
+           compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp X>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LSHFT>
+                , <&macro_press &kp LCTRL>
+                , <&macro_tap &kp S>
+                , <&macro_release &kp LCTRL>
+                , <&macro_press &kp LALT>
+                , <&macro_tap &kp F4>
+                , <&macro_release &kp LALT>
+                ;
+        };
     };
 
 
@@ -61,7 +92,7 @@
         compatible = "zmk,keymap";
 		
         default_layer {
-            display-name = "Default Layer";
+            display-name = "Default Layer (0)";
 
             bindings = <
                &kp ESC   &kp RET   &kp SPACE
@@ -75,7 +106,7 @@
             display-name = "Lower Layer (1)";
 			
             bindings = <
-               &tog 3     &qbt       &kp F4
+               &tog 3     &tog 4     &kp F4
                &none      &kp TAB    &kp LALT
                &kp PG_DN  &kp LCTRL  &kp PG_UP
             >;
@@ -91,7 +122,7 @@
             >;
         };
         
-        macro_layer {
+        macro_layer1 {
             display-name = "Macro Layer (3)";
 			
             bindings = <
@@ -100,5 +131,16 @@
               &obs    &stm    &qbt
             >;
         };
+
+        macro_layer2 {
+            display-name = "Macro Layer (4)";
+			
+            bindings = <
+              &obs   &stm    &dscrd
+              &none  &tog 4  &csc
+              &zoom  &tlgrm  &anki
+            >;
+        };
+
     };
 };
