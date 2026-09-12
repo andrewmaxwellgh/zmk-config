@@ -1,17 +1,21 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/pointing.h>
+
+&msc {
+    x-input-code = <INPUT_REL_HWHEEL>;
+    y-input-code = <INPUT_REL_WHEEL>;
+    time-to-max-speed-ms = <10>;
+    acceleration-exponent = <0>;
+};
+
+
 
 / {
 
 	macros {
-        qbt: qbittorrent {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp LGUI &kp Q &kp B &kp I &kp T &kp RET>
-                ;
-        };
+        
         tlgrm: telegram {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -38,13 +42,6 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp LGUI &kp Z &kp O &kp O &kp M &kp RET>
-                ;
-        };
-        oxf: oxford_learners_bookshelf {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp LGUI &kp O &kp X &kp F &kp O &kp RET>
                 ;
         };
         pnt: paint {
@@ -95,9 +92,9 @@
             display-name = "Default Layer (0)";
 
             bindings = <
-               &kp ESC   &kp RET   &kp SPACE
-               &mo 1     &kp UP    &mo 2
-               &kp LEFT  &kp DOWN  &kp RIGHT
+               &kp ESC         &kp RET   &kp SPACE
+               &mo 1           &kp UP    &mo 2
+               &mt LEFT PG_UP  &kp DOWN  &mt RIGHT PG_DN
             >;
 
         };
@@ -122,23 +119,23 @@
             >;
         };
         
-        macro_layer1 {
+        macro_layer {
             display-name = "Macro Layer (3)";
 			
             bindings = <
-              &tlgrm  &zoom   &oxf
-              &none   &tog 3  &pnt
-              &obs    &stm    &qbt
+              &obs   &stm    &mt dscrd zoom
+              &none  &tog 4  &csc
+              &zoom  &tlgrm  &anki
             >;
         };
 
-        macro_layer2 {
-            display-name = "Macro Layer (4)";
+        editing_layer {
+            display-name = "Editing Layer (4)";
 			
             bindings = <
-              &obs   &stm    &dscrd
-              &none  &tog 4  &csc
-              &zoom  &tlgrm  &anki
+              &kp DEL        &kp LC(DEL)  &kp LS(R)
+              &kp LC(LS(G))  &tog 4       &kp LC(G)
+              &msc SCRL_UP   &kp M        &msc SCRL_DOWN
             >;
         };
 
