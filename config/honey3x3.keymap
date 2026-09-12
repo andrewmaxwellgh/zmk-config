@@ -84,6 +84,19 @@
         };
     };
 
+    {
+    behaviors {
+        mt1: mod_tap1 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&dscrd>, <&zoom>;
+            display-name = "Mod-Tap1";
+        };
+    };
+};
+
 
     keymap {
         compatible = "zmk,keymap";
@@ -123,7 +136,7 @@
             display-name = "Macro Layer (3)";
 			
             bindings = <
-              &obs   &stm    &mt dscrd zoom
+              &obs   &stm    &mt1
               &none  &tog 4  &csc
               &zoom  &tlgrm  &anki
             >;
