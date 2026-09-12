@@ -102,7 +102,7 @@
             bindings = <
                &kp ESC         &kp RET   &kp SPACE
                &mo 1           &kp UP    &mo 2
-               &mt LEFT PG_UP  &kp DOWN  &mt RIGHT PG_DN
+               &mt PG_UP LEFT   &kp DOWN  &mt PG_DN RIGHT 
             >;
 
         };
