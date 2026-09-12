@@ -10,10 +10,7 @@
     acceleration-exponent = <0>;
 };
 
-
-
 / {
-
 	macros {
         
         tlgrm: telegram {
@@ -134,7 +131,7 @@
             display-name = "Macro Layer (3)";
 			
             bindings = <
-              &obs   &stm    &mt1
+              &obs   &stm    &mt1 0 0
               &none  &tog 4  &csc
               &zoom  &tlgrm  &anki
             >;
