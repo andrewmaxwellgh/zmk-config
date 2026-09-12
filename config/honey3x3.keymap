@@ -84,7 +84,6 @@
         };
     };
 
-    {
     behaviors {
         mt1: mod_tap1 {
             compatible = "zmk,behavior-hold-tap";
@@ -95,7 +94,7 @@
             display-name = "Mod-Tap1";
         };
     };
-};
+
 
 
     keymap {
