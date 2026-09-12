@@ -133,7 +133,7 @@
 			
             bindings = <
               &obs   &stm    &mt1 0 0
-              &none  &tog 4  &csc
+              &none  &tog 3  &csc
               &zoom  &tlgrm  &anki
             >;
         };
