@@ -14,6 +14,16 @@
 / {
 	macros {
         
+        ctrldel: control_delte {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp DEL>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+
         tlgrm: telegram {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -98,12 +108,12 @@
         compatible = "zmk,keymap";
 		
         default_layer {
-            display-name = "Default Layer (0)";
+            display-name = "Default Layer Media (0)";
 
             bindings = <
                &kp ESC         &kp RET   &kp SPACE
                &mo 1           &kp UP    &mo 2
-               &mt PG_UP LEFT   &kp DOWN  &mt PG_DN RIGHT 
+               &mt PG_UP LEFT  &kp DOWN  &mt PG_DN RIGHT
             >;
 
         };
@@ -142,7 +152,7 @@
             display-name = "Editing Layer (4)";
 			
             bindings = <
-              &kp DEL        &kp LC(DEL)  &kp LS(R)
+              &kp DEL        &ctrldel     &kp LS(R)
               &kp LC(LS(G))  &tog 4       &kp LC(G)
               &msc SCRL_UP   &kp M        &msc SCRL_DOWN
             >;
