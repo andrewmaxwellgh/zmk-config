@@ -1,0 +1,8 @@
+config SHIELD_WAXYSPLIT_LEFT
+    def_bool $(shields_list_contains,waxysplit_left)
+
+config SHIELD_WAXYSPLIT_RIGHT
+    def_bool $(shields_list_contains,waxysplit_right)
+
+config SHIELD_WAXYSPLIT_DONGLE
+    def_bool $(shields_list_contains,waxysplit_dongle)
