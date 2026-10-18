@@ -5,7 +5,7 @@
     col-offset = <6>;
 };
 
-&kscan {
+&kscan0 {
    
     col-gpios
         = <&pro_micro 16 GPIO_ACTIVE_HIGH>
