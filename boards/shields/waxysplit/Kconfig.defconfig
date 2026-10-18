@@ -2,7 +2,7 @@
 if SHIELD_WAXYSPLIT_DONGLE
 
 config ZMK_KEYBOARD_NAME
-	default "WaxySplit Dongle"
+	default "WaxySplitD"
 
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
