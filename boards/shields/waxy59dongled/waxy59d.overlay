@@ -1,7 +1,7 @@
 
 
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "waxy59-layouts.dtsi"
+#include "waxy59d-layouts.dtsi"
 
 
     &default_layout {
