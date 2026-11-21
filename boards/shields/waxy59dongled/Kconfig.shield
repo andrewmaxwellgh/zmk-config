@@ -1,0 +1,5 @@
+config SHIELD_WAXY59D
+    def_bool $(shields_list_contains,waxy59d)
+
+config SHIELD_WAXY59D_DONGLE
+    def_bool $(shields_list_contains,waxy59d_dongle)
