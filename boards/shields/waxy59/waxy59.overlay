@@ -12,8 +12,10 @@
 / {
     chosen {
         zmk,physical-layout = &default_layout;
-        zmk,kscan = &kscan1;
+        zmk,kscan = &kscan0;
     };
+
+// prototype wiring
 
     kscan0: kscan0 {
         
@@ -44,6 +46,9 @@
             , <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
+    
+// PCB wiring
+
     kscan1: kscan1 {
         
         compatible = "zmk,kscan-gpio-matrix";

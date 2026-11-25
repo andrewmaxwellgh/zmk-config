@@ -19,9 +19,9 @@
 
 
 #- board: nice_nano_v2
-#    shield: waxy59
-#    snippet: studio-rpc-usb-uart
-#    cmake-args: -DCONFIG_ZMK_STUDIO=y
+#  shield: waxy59
+#  snippet: studio-rpc-usb-uart
+#  cmake-args: -DCONFIG_ZMK_STUDIO=y
 #    
 #  - board: nice_nano_v2
 #    shield: honey3x3
@@ -29,37 +29,42 @@
 #    cmake-args: -DCONFIG_ZMK_STUDIO=y
 
 #- board: nice_nano_v2
- #   shield: waxysplit_dongle
-  #  artifact-name: waxysplit_dongle
-   # snippet: studio-rpc-usb-uart
-    #cmake-args: -DCONFIG_ZMK_STUDIO=y
+#  shield: waxysplit_dongle
+#  artifact-name: waxysplit_dongle
+#  snippet: studio-rpc-usb-uart
+#  cmake-args: -DCONFIG_ZMK_STUDIO=y
 #
- # - board: nice_nano_v2
-  #  shield: waxysplit_left
-   # cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n 
-    #artifact-name: waxysplit_left_peripheral
+# - board: nice_nano_v2
+#   shield: waxysplit_left
+#   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n 
+#   artifact-name: waxysplit_left_peripheral
+
+# - board: nice_nano_v2
+#   shield: waxysplit_right
+#   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n 
+#   artifact-name: waxysplit_right_peripheral
 #
- # - board: nice_nano_v2
-  #  shield: waxysplit_right
-   # cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n 
-    #artifact-name: waxysplit_right_peripheral
-#
+# - board: nice_nano_v2
+#   shield: settings_reset
+
+# - board: nice_nano_v2
+#   shield: waxy59d_dongle
+#   artifact-name: waxy59d_dongle
+#   snippet: studio-rpc-usb-uart
+#   cmake-args: -DCONFIG_ZMK_STUDIO=y
+
+# - board: nice_nano_v2
+#   shield: waxy59d
+#   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n 
+#   artifact-name: waxy59d
 ---
 include:
-  
-  - board: nice_nano_v2
-    shield: settings_reset
 
   - board: nice_nano_v2
-    shield: waxy59d_dongle
-    artifact-name: waxy59d_dongle
+    shield: waxy59
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
 
-  - board: nice_nano_v2
-    shield: waxy59d
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n 
-    artifact-name: waxy59d
 
 
 

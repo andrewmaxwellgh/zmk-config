@@ -17,7 +17,7 @@
     waxysplit_physical_layout: waxysplit_physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "Waxysplit";
-        transform = <&default_transform>;
+        transform = <&default_transform>; //don't forget this
         
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0    0       0     0     0>

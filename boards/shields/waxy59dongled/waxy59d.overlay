@@ -13,6 +13,8 @@
         zmk,kscan = &kscan1;
     };
 
+// prototype wiring
+
     kscan0: kscan0 {
         
         compatible = "zmk,kscan-gpio-matrix";
@@ -42,6 +44,9 @@
             , <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
+
+    // pcb wiring
+    
     kscan1: kscan1 {
         
         compatible = "zmk,kscan-gpio-matrix";
